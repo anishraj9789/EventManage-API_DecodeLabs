@@ -1,0 +1,84 @@
+### Welcome
+GET http://localhost:3000/
+
+###
+
+### Get All Events
+GET http://localhost:3000/api/events
+
+###
+
+### Get Single Event
+GET http://localhost:3000/api/events/1
+
+###
+
+### Get Event - Not Found (404)
+GET http://localhost:3000/api/events/999
+
+###
+
+### Create New Event
+POST http://localhost:3000/api/events
+Content-Type: application/json
+
+{
+  "eventName": "AI Workshop",
+  "date": "2026-08-01",
+  "venue": "Seminar Hall B",
+  "maxSeats": 30
+}
+
+###
+
+### Register for Event
+POST http://localhost:3000/api/events/register/new
+Content-Type: application/json
+
+{
+  "studentName": "Ravi Kumar",
+  "email": "ravi@college.com",
+  "rollNumber": "CS2024001",
+  "phone": "9876543210",
+  "eventId": 1
+}
+
+###
+
+### Register Again - Duplicate Check (400)
+POST http://localhost:3000/api/events/register/new
+Content-Type: application/json
+
+{
+  "studentName": "Ravi Kumar",
+  "email": "ravi@college.com",
+  "rollNumber": "CS2024001",
+  "phone": "9876543210",
+  "eventId": 1
+}
+
+###
+
+### Bad Data - Validation Test (400)
+POST http://localhost:3000/api/events/register/new
+Content-Type: application/json
+
+{
+  "studentName": "",
+  "email": "not-an-email"
+}
+
+###
+
+### Get All Registrations
+GET http://localhost:3000/api/events/registrations/all
+
+###
+
+### Get by Roll Number
+GET http://localhost:3000/api/events/registrations/CS2024001
+
+###
+
+### Unknown Route - 404
+GET http://localhost:3000/api/unknown
