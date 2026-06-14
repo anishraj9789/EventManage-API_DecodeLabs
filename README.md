@@ -14,7 +14,7 @@ Handles event creation, student registrations, input validation, and proper HTTP
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/eventmanage-api.git
+git clone https://github.com/anishraj9789/eventmanage-api.git
 
 # 2. Go into the folder
 cd eventmanage-api
