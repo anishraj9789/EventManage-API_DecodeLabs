@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ⚡ EventManage API
 
 A College Event Registration REST API built with **Node.js** and **Express**.  
