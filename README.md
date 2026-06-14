@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚡ EventManage API
 
 A College Event Registration REST API built with **Node.js** and **Express**.  
@@ -117,3 +118,6 @@ POST /api/events/register/new
 ## 📄 License
 
 MIT
+=======
+# EventManage-API_DecodeLabs
+>>>>>>> d3970fe1cc08510e5392609abfa42898910682f9
