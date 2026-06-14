@@ -113,11 +113,3 @@ POST /api/events/register/new
 - **Framework:** Express.js
 - **Storage:** In-memory (no database)
 
----
-
-## 📄 License
-
-MIT
-=======
-# EventManage-API_DecodeLabs
->>>>>>> d3970fe1cc08510e5392609abfa42898910682f9
